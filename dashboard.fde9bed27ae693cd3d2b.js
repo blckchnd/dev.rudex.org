@@ -400,7 +400,10 @@ var MarketCard = function (_React$Component) {
         key: "goToMarket",
         value: function goToMarket(e) {
             e.preventDefault();
-            this.context.router.push("/market/" + this.props.base.get("symbol") + "_" + this.props.quote.get("symbol"));
+
+            var history = this.context.router.history;
+
+            history.push("/market/" + this.props.base.get("symbol") + "_" + this.props.quote.get("symbol"));
         }
     }, {
         key: "_onError",
