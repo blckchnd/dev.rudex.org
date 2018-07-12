@@ -10994,22 +10994,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Utility_ChainTypes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(892);
 /* harmony import */ var _Utility_BindToChainState__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(893);
 /* harmony import */ var _Utility_AssetWrapper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(1216);
-/* harmony import */ var _Utility_AssetName__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1215);
-/* harmony import */ var _Modal_BorrowModal__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(2433);
-/* harmony import */ var api_WalletApi__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(583);
-/* harmony import */ var bitsharesjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(414);
-/* harmony import */ var stores_WalletDb__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(587);
-/* harmony import */ var react_translate_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(798);
-/* harmony import */ var react_translate_component__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react_translate_component__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var common_utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(565);
-/* harmony import */ var counterpart__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(569);
-/* harmony import */ var counterpart__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(counterpart__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _Icon_Icon__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(800);
-/* harmony import */ var _Utility_TotalBalanceValue__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(1262);
-/* harmony import */ var immutable__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(521);
-/* harmony import */ var immutable__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(immutable__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(742);
-/* harmony import */ var _Utility_TranslateWithLinks__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(1336);
+/* harmony import */ var _Utility_AssetImage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(2385);
+/* harmony import */ var _Utility_AssetName__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1215);
+/* harmony import */ var _Modal_BorrowModal__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(2433);
+/* harmony import */ var api_WalletApi__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(583);
+/* harmony import */ var bitsharesjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(414);
+/* harmony import */ var stores_WalletDb__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(587);
+/* harmony import */ var react_translate_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(798);
+/* harmony import */ var react_translate_component__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react_translate_component__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var common_utils__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(565);
+/* harmony import */ var counterpart__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(569);
+/* harmony import */ var counterpart__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(counterpart__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _Icon_Icon__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(800);
+/* harmony import */ var _Utility_TotalBalanceValue__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(1262);
+/* harmony import */ var immutable__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(521);
+/* harmony import */ var immutable__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(immutable__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(742);
+/* harmony import */ var _Utility_TranslateWithLinks__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(1336);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -11021,6 +11022,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -11074,7 +11076,7 @@ var MarginPosition = function (_React$Component) {
         key: "_onClosePosition",
         value: function _onClosePosition(e) {
             e.preventDefault();
-            var tr = api_WalletApi__WEBPACK_IMPORTED_MODULE_8__["default"].new_transaction();
+            var tr = api_WalletApi__WEBPACK_IMPORTED_MODULE_9__["default"].new_transaction();
 
             tr.add_type_operation("call_order_update", {
                 fee: {
@@ -11092,7 +11094,7 @@ var MarginPosition = function (_React$Component) {
                 }
             });
 
-            stores_WalletDb__WEBPACK_IMPORTED_MODULE_10__["default"].process_transaction(tr, null, true);
+            stores_WalletDb__WEBPACK_IMPORTED_MODULE_11__["default"].process_transaction(tr, null, true);
         }
 
         // how many units of the debt asset the borrower has
@@ -11118,7 +11120,7 @@ var MarginPosition = function (_React$Component) {
             if (account_balances) {
                 account_balances.forEach(function (a, asset_type) {
                     if (asset_type == row_asset_id) {
-                        var balanceObject = bitsharesjs__WEBPACK_IMPORTED_MODULE_9__["ChainStore"].getObject(a);
+                        var balanceObject = bitsharesjs__WEBPACK_IMPORTED_MODULE_10__["ChainStore"].getObject(a);
 
                         // get the balance
                         balance = balanceObject.get("balance");
@@ -11137,14 +11139,14 @@ var MarginPosition = function (_React$Component) {
                 return 1;
             }
 
-            return 1 / common_utils__WEBPACK_IMPORTED_MODULE_12__["default"].get_asset_price(this.props.debtAsset.getIn(["bitasset", "current_feed", "settlement_price", "quote", "amount"]), this.props.collateralAsset, this.props.debtAsset.getIn(["bitasset", "current_feed", "settlement_price", "base", "amount"]), this.props.debtAsset);
+            return 1 / common_utils__WEBPACK_IMPORTED_MODULE_13__["default"].get_asset_price(this.props.debtAsset.getIn(["bitasset", "current_feed", "settlement_price", "quote", "amount"]), this.props.collateralAsset, this.props.debtAsset.getIn(["bitasset", "current_feed", "settlement_price", "base", "amount"]), this.props.debtAsset);
         }
     }, {
         key: "_getCollateralRatio",
         value: function _getCollateralRatio() {
             var co = this.props.object.toJS();
-            var c = common_utils__WEBPACK_IMPORTED_MODULE_12__["default"].get_asset_amount(co.collateral, this.props.collateralAsset);
-            var d = common_utils__WEBPACK_IMPORTED_MODULE_12__["default"].get_asset_amount(co.debt, this.props.debtAsset);
+            var c = common_utils__WEBPACK_IMPORTED_MODULE_13__["default"].get_asset_amount(co.collateral, this.props.collateralAsset);
+            var d = common_utils__WEBPACK_IMPORTED_MODULE_13__["default"].get_asset_amount(co.debt, this.props.debtAsset);
             return c / (d / this._getFeedPrice());
         }
     }, {
@@ -11175,9 +11177,9 @@ var MarginPosition = function (_React$Component) {
             if (!statusClass || statusClass === "") return null;
 
             if (statusClass === "danger") {
-                return counterpart__WEBPACK_IMPORTED_MODULE_13___default.a.translate("tooltip.cr_danger", { mr: mr });
+                return counterpart__WEBPACK_IMPORTED_MODULE_14___default.a.translate("tooltip.cr_danger", { mr: mr });
             } else if (statusClass === "warning") {
-                return counterpart__WEBPACK_IMPORTED_MODULE_13___default.a.translate("tooltip.cr_warning", { mr: mr });
+                return counterpart__WEBPACK_IMPORTED_MODULE_14___default.a.translate("tooltip.cr_warning", { mr: mr });
             } else {
                 return null;
             }
@@ -11192,7 +11194,7 @@ var MarginPosition = function (_React$Component) {
 
             var co = object.toJS();
             var cr = this._getCollateralRatio();
-            var d = common_utils__WEBPACK_IMPORTED_MODULE_12__["default"].get_asset_amount(co.debt, this.props.debtAsset);
+            var d = common_utils__WEBPACK_IMPORTED_MODULE_13__["default"].get_asset_amount(co.debt, this.props.debtAsset);
             var balance = this._getBalance();
 
             var statusClass = this._getStatusClass();
@@ -11203,10 +11205,15 @@ var MarginPosition = function (_React$Component) {
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     "td",
                     { style: alignLeft },
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_AssetImage__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                        replaceNoneToBts: false,
+                        maxWidth: 30,
+                        name: debtAsset.get("symbol")
+                    }),
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                        react_router_dom__WEBPACK_IMPORTED_MODULE_17__["Link"],
+                        react_router_dom__WEBPACK_IMPORTED_MODULE_18__["Link"],
                         { to: "/asset/" + debtAsset.get("symbol") },
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_AssetName__WEBPACK_IMPORTED_MODULE_6__["default"], { noTip: true, name: debtAsset.get("symbol") })
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_AssetName__WEBPACK_IMPORTED_MODULE_7__["default"], { noTip: true, name: debtAsset.get("symbol") })
                     )
                 ),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
@@ -11243,14 +11250,14 @@ var MarginPosition = function (_React$Component) {
                         "data-tip": this._getCRTip(),
                         className: "center-content " + statusClass
                     },
-                    common_utils__WEBPACK_IMPORTED_MODULE_12__["default"].format_number(cr, 2)
+                    common_utils__WEBPACK_IMPORTED_MODULE_13__["default"].format_number(cr, 2)
                 ),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     "td",
                     { style: alignRight },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_TotalBalanceValue__WEBPACK_IMPORTED_MODULE_15__["default"], {
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_TotalBalanceValue__WEBPACK_IMPORTED_MODULE_16__["default"], {
                         noTip: true,
-                        balances: Object(immutable__WEBPACK_IMPORTED_MODULE_16__["List"])(),
+                        balances: Object(immutable__WEBPACK_IMPORTED_MODULE_17__["List"])(),
                         debt: _defineProperty({}, debtAsset.get("id"), co.debt),
                         collateral: _defineProperty({}, collateralAsset.get("id"), parseInt(co.collateral, 10)),
                         hide_asset: true
@@ -11299,13 +11306,13 @@ var MarginPosition = function (_React$Component) {
                         "div",
                         {
                             "data-place": "left",
-                            "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_13___default.a.translate("tooltip.update_position"),
+                            "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_14___default.a.translate("tooltip.update_position"),
                             style: { paddingBottom: 5 }
                         },
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             "a",
                             { onClick: this._onUpdatePosition.bind(this) },
-                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_14__["default"], {
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_15__["default"], {
                                 name: "adjust",
                                 title: "icons.adjust",
                                 className: "icon-14px rotate90"
@@ -11320,20 +11327,20 @@ var MarginPosition = function (_React$Component) {
                         "div",
                         {
                             "data-place": "left",
-                            "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_13___default.a.translate("tooltip.close_position", { amount: d, asset: debtAsset.get("symbol") }),
+                            "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_14___default.a.translate("tooltip.close_position", { amount: d, asset: debtAsset.get("symbol") }),
                             style: { paddingBottom: 5 }
                         },
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             "a",
                             { onClick: this._onClosePosition.bind(this) },
-                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_14__["default"], {
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_15__["default"], {
                                 name: "cross-circle",
                                 title: "icons.cross_circle.close_position",
                                 className: "icon-14px"
                             })
                         )
                     ),
-                    debtAsset ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal_BorrowModal__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                    debtAsset ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal_BorrowModal__WEBPACK_IMPORTED_MODULE_8__["default"], {
                         ref: "cp_modal_" + co.call_price.quote.asset_id,
                         modalId: "cp_modal_" + co.call_price.quote.asset_id,
                         quote_asset: co.call_price.quote.asset_id,
@@ -11418,7 +11425,7 @@ var MarginPositionPlaceHolder = function (_React$Component3) {
                 return 1;
             }
 
-            return 1 / common_utils__WEBPACK_IMPORTED_MODULE_12__["default"].get_asset_price(this.props.debtAsset.getIn(["bitasset", "current_feed", "settlement_price", "quote", "amount"]), this.props.collateralAsset, this.props.debtAsset.getIn(["bitasset", "current_feed", "settlement_price", "base", "amount"]), this.props.debtAsset);
+            return 1 / common_utils__WEBPACK_IMPORTED_MODULE_13__["default"].get_asset_price(this.props.debtAsset.getIn(["bitasset", "current_feed", "settlement_price", "quote", "amount"]), this.props.collateralAsset, this.props.debtAsset.getIn(["bitasset", "current_feed", "settlement_price", "base", "amount"]), this.props.debtAsset);
         }
     }, {
         key: "render",
@@ -11446,7 +11453,7 @@ var MarginPositionPlaceHolder = function (_React$Component3) {
             if (account_balances) {
                 account_balances.forEach(function (a, asset_type) {
                     if (asset_type == row_asset_id) {
-                        var balanceObject = bitsharesjs__WEBPACK_IMPORTED_MODULE_9__["ChainStore"].getObject(a);
+                        var balanceObject = bitsharesjs__WEBPACK_IMPORTED_MODULE_10__["ChainStore"].getObject(a);
 
                         // get the balance
                         balance = balanceObject.get("balance");
@@ -11460,10 +11467,15 @@ var MarginPositionPlaceHolder = function (_React$Component3) {
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     "td",
                     { style: alignLeft },
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_AssetImage__WEBPACK_IMPORTED_MODULE_6__["default"], {
+                        replaceNoneToBts: false,
+                        maxWidth: 30,
+                        name: debtAsset.get("symbol")
+                    }),
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                        react_router_dom__WEBPACK_IMPORTED_MODULE_17__["Link"],
+                        react_router_dom__WEBPACK_IMPORTED_MODULE_18__["Link"],
                         { to: "/asset/" + debtAsset.get("symbol") },
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_AssetName__WEBPACK_IMPORTED_MODULE_6__["default"], { noTip: true, name: debtAsset.get("symbol") })
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_AssetName__WEBPACK_IMPORTED_MODULE_7__["default"], { noTip: true, name: debtAsset.get("symbol") })
                     )
                 ),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
@@ -11508,13 +11520,13 @@ var MarginPositionPlaceHolder = function (_React$Component3) {
                         "div",
                         {
                             "data-place": "left",
-                            "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_13___default.a.translate("tooltip.update_position"),
+                            "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_14___default.a.translate("tooltip.update_position"),
                             style: { paddingBottom: 5 }
                         },
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             "a",
                             { onClick: this._onUpdatePosition.bind(this) },
-                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_14__["default"], {
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_15__["default"], {
                                 name: "adjust",
                                 title: "icons.adjust",
                                 className: "icon-14px rotate90"
@@ -11525,7 +11537,7 @@ var MarginPositionPlaceHolder = function (_React$Component3) {
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     "td",
                     null,
-                    debtAsset ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal_BorrowModal__WEBPACK_IMPORTED_MODULE_7__["default"], {
+                    debtAsset ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal_BorrowModal__WEBPACK_IMPORTED_MODULE_8__["default"], {
                         ref: "cp_modal_" + debtAsset.get("id"),
                         modalId: "cp_modal_" + debtAsset.get("id"),
                         quote_asset: debtAsset.get("id"),
@@ -11647,22 +11659,22 @@ var CollateralTable = function CollateralTable(_ref3) {
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     "th",
                     { style: alignLeft },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_11___default.a, { content: "explorer.asset.title" })
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_12___default.a, { content: "explorer.asset.title" })
                 ),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     "th",
                     { style: alignRight },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_11___default.a, { content: "exchange.balance" })
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_12___default.a, { content: "exchange.balance" })
                 ),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     "th",
                     { style: alignRight },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_11___default.a, { content: "transaction.borrow_amount" })
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_12___default.a, { content: "transaction.borrow_amount" })
                 ),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     "th",
                     { style: alignRight, className: "column-hide-medium" },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_11___default.a, { content: "transaction.collateral" })
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_12___default.a, { content: "transaction.collateral" })
                 ),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     "th",
@@ -11672,15 +11684,15 @@ var CollateralTable = function CollateralTable(_ref3) {
                         {
                             className: "tooltip inline-block",
                             "data-place": "top",
-                            "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_13___default.a.translate("tooltip.coll_ratio")
+                            "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_14___default.a.translate("tooltip.coll_ratio")
                         },
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_11___default.a, { content: "borrow.coll_ratio" })
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_12___default.a, { content: "borrow.coll_ratio" })
                     )
                 ),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     "th",
                     null,
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_TranslateWithLinks__WEBPACK_IMPORTED_MODULE_18__["default"], {
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_TranslateWithLinks__WEBPACK_IMPORTED_MODULE_19__["default"], {
                         noLink: true,
                         string: "account.total",
                         keys: [{
@@ -11698,30 +11710,30 @@ var CollateralTable = function CollateralTable(_ref3) {
                         {
                             className: "tooltip inline-block",
                             "data-place": "top",
-                            "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_13___default.a.translate("tooltip.call_price")
+                            "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_14___default.a.translate("tooltip.call_price")
                         },
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_11___default.a, { content: "exchange.call" })
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_12___default.a, { content: "exchange.call" })
                     )
                 ),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     "th",
                     { style: alignRight, className: "column-hide-small" },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_11___default.a, { content: "exchange.price" })
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_12___default.a, { content: "exchange.price" })
                 ),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     "th",
                     { className: "column-hide-small", style: alignLeft },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_11___default.a, { content: "explorer.assets.units" })
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_12___default.a, { content: "explorer.assets.units" })
                 ),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     "th",
                     null,
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_11___default.a, { content: "borrow.adjust_short" })
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_12___default.a, { content: "borrow.adjust_short" })
                 ),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     "th",
                     null,
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_11___default.a, { content: "transfer.close" })
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_translate_component__WEBPACK_IMPORTED_MODULE_12___default.a, { content: "transfer.close" })
                 )
             )
         ),
@@ -11740,7 +11752,7 @@ var CollateralTable = function CollateralTable(_ref3) {
         ),
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PlaceHolderWrapper, {
             account: account,
-            callOrders: immutable__WEBPACK_IMPORTED_MODULE_16___default.a.List(callOrders)
+            callOrders: immutable__WEBPACK_IMPORTED_MODULE_17___default.a.List(callOrders)
         }),
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
             "tbody",
@@ -14079,32 +14091,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Utility_BalanceComponent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1230);
 /* harmony import */ var _Utility_EquivalentValueComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2371);
 /* harmony import */ var _Utility_MarketChangeComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2507);
-/* harmony import */ var common_asset_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(1028);
-/* harmony import */ var counterpart__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(569);
-/* harmony import */ var counterpart__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(counterpart__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(742);
-/* harmony import */ var _Utility_EquivalentPrice__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(2508);
-/* harmony import */ var _Utility_LinkToAssetById__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(1331);
-/* harmony import */ var _Modal_BorrowModal__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(2433);
-/* harmony import */ var react_tooltip__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(1267);
-/* harmony import */ var react_tooltip__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react_tooltip__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var common_gatewayUtils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(1260);
-/* harmony import */ var bitsharesjs_es__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(414);
-/* harmony import */ var alt_react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(786);
-/* harmony import */ var alt_react__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(alt_react__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var stores_SettingsStore__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(707);
-/* harmony import */ var stores_GatewayStore__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(1257);
-/* harmony import */ var stores_MarketsStore__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(1264);
-/* harmony import */ var _Icon_Icon__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(800);
-/* harmony import */ var _Icon_PulseIcon__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(2509);
-/* harmony import */ var common_utils__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(565);
-/* harmony import */ var _Modal_SendModal__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(1004);
-/* harmony import */ var actions_SettingsActions__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(728);
-/* harmony import */ var _Modal_SettleModal__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(2510);
-/* harmony import */ var _Modal_DepositModal__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(1231);
-/* harmony import */ var _Dashboard_SimpleDepositWithdraw__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(2389);
-/* harmony import */ var _Dashboard_SimpleDepositBlocktradesBridge__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(2390);
-/* harmony import */ var _Modal_WithdrawModalNew__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(1280);
+/* harmony import */ var _Utility_AssetImage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2385);
+/* harmony import */ var common_asset_utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1028);
+/* harmony import */ var counterpart__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(569);
+/* harmony import */ var counterpart__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(counterpart__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(742);
+/* harmony import */ var _Utility_EquivalentPrice__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(2508);
+/* harmony import */ var _Utility_LinkToAssetById__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(1331);
+/* harmony import */ var _Modal_BorrowModal__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(2433);
+/* harmony import */ var react_tooltip__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(1267);
+/* harmony import */ var react_tooltip__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react_tooltip__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var common_gatewayUtils__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(1260);
+/* harmony import */ var bitsharesjs_es__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(414);
+/* harmony import */ var alt_react__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(786);
+/* harmony import */ var alt_react__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(alt_react__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var stores_SettingsStore__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(707);
+/* harmony import */ var stores_GatewayStore__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(1257);
+/* harmony import */ var stores_MarketsStore__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(1264);
+/* harmony import */ var _Icon_Icon__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(800);
+/* harmony import */ var _Icon_PulseIcon__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(2509);
+/* harmony import */ var common_utils__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(565);
+/* harmony import */ var _Modal_SendModal__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(1004);
+/* harmony import */ var actions_SettingsActions__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(728);
+/* harmony import */ var _Modal_SettleModal__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(2510);
+/* harmony import */ var _Modal_DepositModal__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(1231);
+/* harmony import */ var _Dashboard_SimpleDepositWithdraw__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(2389);
+/* harmony import */ var _Dashboard_SimpleDepositBlocktradesBridge__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(2390);
+/* harmony import */ var _Modal_WithdrawModalNew__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(1280);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -14116,6 +14129,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -14216,7 +14230,7 @@ var AccountPortfolioList = function (_React$Component) {
                         {
                             onClick: _this._showDepositWithdraw.bind(_this, "bridge_modal", assetName, false)
                         },
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_PulseIcon__WEBPACK_IMPORTED_MODULE_19__["default"], {
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_PulseIcon__WEBPACK_IMPORTED_MODULE_20__["default"], {
                             onIcon: "dollar",
                             offIcon: "dollar-green",
                             title: "icons.dollar.buy",
@@ -14234,7 +14248,7 @@ var AccountPortfolioList = function (_React$Component) {
                         {
                             onClick: _this._showDepositWithdraw.bind(_this, "bridge_modal", assetName, false)
                         },
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_18__["default"], {
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_19__["default"], {
                             name: "dollar",
                             title: "icons.dollar.buy",
                             className: "icon-14px"
@@ -14299,8 +14313,8 @@ var AccountPortfolioList = function (_React$Component) {
         value: function shouldComponentUpdate(np, ns) {
             var _this3 = this;
 
-            return !common_utils__WEBPACK_IMPORTED_MODULE_20__["default"].are_equal_shallow(ns, this.state) || !common_utils__WEBPACK_IMPORTED_MODULE_20__["default"].are_equal_shallow(np.backedCoins, this.props.backedCoins) || !common_utils__WEBPACK_IMPORTED_MODULE_20__["default"].are_equal_shallow(np.balances, this.props.balances) || !common_utils__WEBPACK_IMPORTED_MODULE_20__["default"].are_equal_shallow(np.balanceList, this.props.balanceList) || !common_utils__WEBPACK_IMPORTED_MODULE_20__["default"].are_equal_shallow(np.optionalAssets, this.props.optionalAssets) || np.account !== this.props.account || np.visible !== this.props.visible || np.settings !== this.props.settings || np.hiddenAssets !== this.props.hiddenAssets || np.sortDirection !== this.props.sortDirection || np.sortKey !== this.props.sortKey || np.allMarketStats.reduce(function (a, value, key) {
-                return common_utils__WEBPACK_IMPORTED_MODULE_20__["default"].check_market_stats(value, _this3.props.allMarketStats.get(key)) || a;
+            return !common_utils__WEBPACK_IMPORTED_MODULE_21__["default"].are_equal_shallow(ns, this.state) || !common_utils__WEBPACK_IMPORTED_MODULE_21__["default"].are_equal_shallow(np.backedCoins, this.props.backedCoins) || !common_utils__WEBPACK_IMPORTED_MODULE_21__["default"].are_equal_shallow(np.balances, this.props.balances) || !common_utils__WEBPACK_IMPORTED_MODULE_21__["default"].are_equal_shallow(np.balanceList, this.props.balanceList) || !common_utils__WEBPACK_IMPORTED_MODULE_21__["default"].are_equal_shallow(np.optionalAssets, this.props.optionalAssets) || np.account !== this.props.account || np.visible !== this.props.visible || np.settings !== this.props.settings || np.hiddenAssets !== this.props.hiddenAssets || np.sortDirection !== this.props.sortDirection || np.sortKey !== this.props.sortKey || np.allMarketStats.reduce(function (a, value, key) {
+                return common_utils__WEBPACK_IMPORTED_MODULE_21__["default"].check_market_stats(value, _this3.props.allMarketStats.get(key)) || a;
             }, false);
         }
     }, {
@@ -14325,7 +14339,7 @@ var AccountPortfolioList = function (_React$Component) {
     }, {
         key: "_hideAsset",
         value: function _hideAsset(asset, status) {
-            actions_SettingsActions__WEBPACK_IMPORTED_MODULE_22__["default"].hideAsset(asset, status);
+            actions_SettingsActions__WEBPACK_IMPORTED_MODULE_23__["default"].hideAsset(asset, status);
         }
     }, {
         key: "_showDepositModal",
@@ -14376,7 +14390,7 @@ var AccountPortfolioList = function (_React$Component) {
                 var modalRef = "cp_modal_" + asset.get("id");
                 return {
                     isBitAsset: isBitAsset,
-                    borrowModal: !isBitAsset ? null : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal_BorrowModal__WEBPACK_IMPORTED_MODULE_10__["default"], {
+                    borrowModal: !isBitAsset ? null : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal_BorrowModal__WEBPACK_IMPORTED_MODULE_11__["default"], {
                         ref: modalRef,
                         modalId: "borrow_modal_" + asset.get("id"),
                         quote_asset: asset.get("id"),
@@ -14387,11 +14401,11 @@ var AccountPortfolioList = function (_React$Component) {
                         "a",
                         {
                             onClick: function onClick() {
-                                react_tooltip__WEBPACK_IMPORTED_MODULE_11___default.a.hide();
+                                react_tooltip__WEBPACK_IMPORTED_MODULE_12___default.a.hide();
                                 _this7.refs[modalRef].show();
                             }
                         },
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_18__["default"], {
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_19__["default"], {
                             name: "dollar",
                             title: "icons.dollar.borrow",
                             className: "icon-14px"
@@ -14403,10 +14417,10 @@ var AccountPortfolioList = function (_React$Component) {
             var balances = [];
             var emptyCell = "-";
             balanceList.forEach(function (balance) {
-                var balanceObject = bitsharesjs_es__WEBPACK_IMPORTED_MODULE_13__["ChainStore"].getObject(balance);
+                var balanceObject = bitsharesjs_es__WEBPACK_IMPORTED_MODULE_14__["ChainStore"].getObject(balance);
                 if (!balanceObject) return;
                 var asset_type = balanceObject.get("asset_type");
-                var asset = bitsharesjs_es__WEBPACK_IMPORTED_MODULE_13__["ChainStore"].getObject(asset_type);
+                var asset = bitsharesjs_es__WEBPACK_IMPORTED_MODULE_14__["ChainStore"].getObject(asset_type);
                 if (!asset) return;
 
                 var directMarketLink = void 0,
@@ -14418,7 +14432,7 @@ var AccountPortfolioList = function (_React$Component) {
                 var notCore = asset.get("id") !== "1.3.0";
                 var notCorePrefUnit = preferredUnit !== coreSymbol;
 
-                var _assetUtils$parseDesc = common_asset_utils__WEBPACK_IMPORTED_MODULE_5__["default"].parseDescription(asset.getIn(["options", "description"])),
+                var _assetUtils$parseDesc = common_asset_utils__WEBPACK_IMPORTED_MODULE_6__["default"].parseDescription(asset.getIn(["options", "description"])),
                     market = _assetUtils$parseDesc.market;
 
                 symbol = asset.get("symbol");
@@ -14429,26 +14443,26 @@ var AccountPortfolioList = function (_React$Component) {
 
                 /* Table content */
                 directMarketLink = notCore ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                    react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Link"],
+                    react_router_dom__WEBPACK_IMPORTED_MODULE_8__["Link"],
                     { to: "/market/" + asset.get("symbol") + "_" + preferredMarket },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_18__["default"], {
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_19__["default"], {
                         name: "trade",
                         title: "icons.trade.trade",
                         className: "icon-14px"
                     })
                 ) : notCorePrefUnit ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                    react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Link"],
+                    react_router_dom__WEBPACK_IMPORTED_MODULE_8__["Link"],
                     { to: "/market/" + asset.get("symbol") + "_" + preferredUnit },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_18__["default"], {
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_19__["default"], {
                         name: "trade",
                         title: "icons.trade.trade",
                         className: "icon-14px"
                     })
                 ) : emptyCell;
                 transferLink = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                    react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Link"],
+                    react_router_dom__WEBPACK_IMPORTED_MODULE_8__["Link"],
                     { to: "/transfer?asset=" + asset.get("id") },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_18__["default"], {
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_19__["default"], {
                         name: "transfer",
                         title: "icons.transfer",
                         className: "icon-14px"
@@ -14466,7 +14480,7 @@ var AccountPortfolioList = function (_React$Component) {
                 settleLink = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     "a",
                     { onClick: _this7._onSettleAsset.bind(_this7, asset.get("id")) },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_18__["default"], {
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_19__["default"], {
                         name: "settle",
                         title: "icons.settle",
                         className: "icon-14px"
@@ -14477,7 +14491,7 @@ var AccountPortfolioList = function (_React$Component) {
                 var hasBalance = !!balanceObject.get("balance");
                 var hasOnOrder = !!orders[asset_type];
 
-                var backedCoin = Object(common_gatewayUtils__WEBPACK_IMPORTED_MODULE_12__["getBackedCoin"])(asset.get("symbol"), _this7.props.backedCoins);
+                var backedCoin = Object(common_gatewayUtils__WEBPACK_IMPORTED_MODULE_13__["getBackedCoin"])(asset.get("symbol"), _this7.props.backedCoins);
                 // const canDeposit =
                 //     (backedCoin && backedCoin.depositAllowed) ||
                 //     asset.get("symbol") == "BTS";
@@ -14492,7 +14506,7 @@ var AccountPortfolioList = function (_React$Component) {
                 var canBuy = !!_this7.props.bridgeCoins.get(symbol);
                 var assetAmount = balanceObject.get("balance");
 
-                _this7.qtyRefs[asset.get("symbol")] = common_utils__WEBPACK_IMPORTED_MODULE_20__["default"].get_asset_amount(assetAmount, asset);
+                _this7.qtyRefs[asset.get("symbol")] = common_utils__WEBPACK_IMPORTED_MODULE_21__["default"].get_asset_amount(assetAmount, asset);
 
                 balances.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     "tr",
@@ -14500,7 +14514,12 @@ var AccountPortfolioList = function (_React$Component) {
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                         "td",
                         { style: { textAlign: "left" } },
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_LinkToAssetById__WEBPACK_IMPORTED_MODULE_9__["default"], { asset: asset.get("id") })
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_AssetImage__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                            replaceNoneToBts: false,
+                            maxWidth: 30,
+                            name: asset.get("symbol")
+                        }),
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_LinkToAssetById__WEBPACK_IMPORTED_MODULE_10__["default"], { asset: asset.get("id") })
                     ),
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                         "td",
@@ -14513,7 +14532,7 @@ var AccountPortfolioList = function (_React$Component) {
                             style: { textAlign: "right" },
                             className: "column-hide-small"
                         },
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_EquivalentPrice__WEBPACK_IMPORTED_MODULE_8__["default"], {
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_EquivalentPrice__WEBPACK_IMPORTED_MODULE_9__["default"], {
                             refCallback: function refCallback(c) {
                                 if (c && c.refs.bound_component) _this7.priceRefs[asset.get("symbol")] = c.refs.bound_component;
                             },
@@ -14577,7 +14596,7 @@ var AccountPortfolioList = function (_React$Component) {
                         canDeposit && _this7.props.isMyAccount ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             "span",
                             null,
-                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_18__["default"], {
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_19__["default"], {
                                 style: { cursor: "pointer" },
                                 name: "deposit",
                                 title: "icons.deposit.deposit",
@@ -14598,7 +14617,7 @@ var AccountPortfolioList = function (_React$Component) {
                                     className: !canWithdraw ? "disabled" : "",
                                     onClick: canWithdraw ? _this7._showDepositWithdraw.bind(_this7, "withdraw_modal_new", assetName, false) : function () {}
                                 },
-                                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_18__["default"], {
+                                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_19__["default"], {
                                     name: "withdraw",
                                     title: "icons.withdraw",
                                     className: "icon-14px"
@@ -14619,7 +14638,7 @@ var AccountPortfolioList = function (_React$Component) {
                             {
                                 className: "inline-block",
                                 "data-place": "bottom",
-                                "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_6___default.a.translate("tooltip.borrow", { asset: symbol })
+                                "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_7___default.a.translate("tooltip.borrow", { asset: symbol })
                             },
                             borrowLink,
                             borrowModal
@@ -14633,7 +14652,7 @@ var AccountPortfolioList = function (_React$Component) {
                             {
                                 className: "inline-block",
                                 "data-place": "bottom",
-                                "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_6___default.a.translate("tooltip.settle", { asset: symbol })
+                                "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_7___default.a.translate("tooltip.settle", { asset: symbol })
                             },
                             settleLink
                         ) : emptyCell
@@ -14644,7 +14663,7 @@ var AccountPortfolioList = function (_React$Component) {
                             style: { textAlign: "center" },
                             className: "column-hide-small",
                             "data-place": "bottom",
-                            "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_6___default.a.translate("tooltip." + (includeAsset ? "hide_asset" : "show_asset"))
+                            "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_7___default.a.translate("tooltip." + (includeAsset ? "hide_asset" : "show_asset"))
                         },
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             "a",
@@ -14653,7 +14672,7 @@ var AccountPortfolioList = function (_React$Component) {
                                 className: includeAsset ? "order-cancel" : "action-plus",
                                 onClick: _this7._hideAsset.bind(_this7, asset_type, includeAsset)
                             },
-                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_18__["default"], {
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_19__["default"], {
                                 name: includeAsset ? "cross-circle" : "plus-circle",
                                 title: includeAsset ? "icons.cross_circle.hide_asset" : "icons.plus_circle.show_asset",
                                 className: "icon-14px"
@@ -14680,7 +14699,7 @@ var AccountPortfolioList = function (_React$Component) {
                     });
                     return keep && isAvailable;
                 }).forEach(function (a) {
-                    var asset = bitsharesjs_es__WEBPACK_IMPORTED_MODULE_13__["ChainStore"].getAsset(a);
+                    var asset = bitsharesjs_es__WEBPACK_IMPORTED_MODULE_14__["ChainStore"].getAsset(a);
                     if (asset && _this7.props.isMyAccount) {
                         var includeAsset = !hiddenAssets.includes(asset.get("id"));
 
@@ -14695,18 +14714,18 @@ var AccountPortfolioList = function (_React$Component) {
 
                         var notCore = asset.get("id") !== "1.3.0";
 
-                        var _assetUtils$parseDesc2 = common_asset_utils__WEBPACK_IMPORTED_MODULE_5__["default"].parseDescription(asset.getIn(["options", "description"])),
+                        var _assetUtils$parseDesc2 = common_asset_utils__WEBPACK_IMPORTED_MODULE_6__["default"].parseDescription(asset.getIn(["options", "description"])),
                             market = _assetUtils$parseDesc2.market;
 
                         if (asset.get("symbol").indexOf("OPEN.") !== -1 && !market) market = "USD";
                         var preferredMarket = market ? market : coreSymbol;
 
                         var directMarketLink = notCore ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                            react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Link"],
+                            react_router_dom__WEBPACK_IMPORTED_MODULE_8__["Link"],
                             {
                                 to: "/market/" + asset.get("symbol") + "_" + preferredMarket
                             },
-                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_18__["default"], {
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_19__["default"], {
                                 name: "trade",
                                 title: "icons.trade.trade",
                                 className: "icon-14px"
@@ -14727,7 +14746,12 @@ var AccountPortfolioList = function (_React$Component) {
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                 "td",
                                 { style: { textAlign: "left" } },
-                                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_LinkToAssetById__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_AssetImage__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                                    replaceNoneToBts: false,
+                                    maxWidth: 30,
+                                    name: asset.get("symbol")
+                                }),
+                                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utility_LinkToAssetById__WEBPACK_IMPORTED_MODULE_10__["default"], {
                                     asset: asset.get("id")
                                 })
                             ),
@@ -14767,7 +14791,7 @@ var AccountPortfolioList = function (_React$Component) {
                                         {
                                             onClick: _this7._showDepositWithdraw.bind(_this7, "bridge_modal", a, false)
                                         },
-                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_18__["default"], {
+                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_19__["default"], {
                                             name: "dollar",
                                             title: "icons.dollar.buy",
                                             className: "icon-14px"
@@ -14781,7 +14805,7 @@ var AccountPortfolioList = function (_React$Component) {
                                 canDeposit && _this7.props.isMyAccount ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                     "span",
                                     null,
-                                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_18__["default"], {
+                                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_19__["default"], {
                                         style: { cursor: "pointer" },
                                         name: "deposit",
                                         title: "icons.deposit.deposit",
@@ -14808,7 +14832,7 @@ var AccountPortfolioList = function (_React$Component) {
                                     {
                                         className: "inline-block",
                                         "data-place": "bottom",
-                                        "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_6___default.a.translate("tooltip.borrow", { asset: asset.get("symbol") })
+                                        "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_7___default.a.translate("tooltip.borrow", { asset: asset.get("symbol") })
                                     },
                                     borrowLink,
                                     borrowModal
@@ -14825,7 +14849,7 @@ var AccountPortfolioList = function (_React$Component) {
                                     style: { textAlign: "center" },
                                     className: "column-hide-small",
                                     "data-place": "bottom",
-                                    "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_6___default.a.translate("tooltip." + (includeAsset ? "hide_asset" : "show_asset"))
+                                    "data-tip": counterpart__WEBPACK_IMPORTED_MODULE_7___default.a.translate("tooltip." + (includeAsset ? "hide_asset" : "show_asset"))
                                 },
                                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                     "a",
@@ -14834,7 +14858,7 @@ var AccountPortfolioList = function (_React$Component) {
                                         className: includeAsset ? "order-cancel" : "action-plus",
                                         onClick: _this7._hideAsset.bind(_this7, asset.get("id"), includeAsset)
                                     },
-                                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_18__["default"], {
+                                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Icon_Icon__WEBPACK_IMPORTED_MODULE_19__["default"], {
                                         name: includeAsset ? "cross-circle" : "plus-circle",
                                         title: includeAsset ? "icons.cross_circle.hide_asset" : "icons.plus_circle.show_asset",
                                         className: "icon-14px"
@@ -14854,7 +14878,7 @@ var AccountPortfolioList = function (_React$Component) {
         value: function _renderSendModal() {
             var _this8 = this;
 
-            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal_SendModal__WEBPACK_IMPORTED_MODULE_21__["default"], {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal_SendModal__WEBPACK_IMPORTED_MODULE_22__["default"], {
                 id: "send_modal_portfolio",
                 refCallback: function refCallback(e) {
                     if (e) _this8.send_modal = e;
@@ -14866,7 +14890,7 @@ var AccountPortfolioList = function (_React$Component) {
     }, {
         key: "_renderSettleModal",
         value: function _renderSettleModal() {
-            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal_SettleModal__WEBPACK_IMPORTED_MODULE_23__["default"], {
+            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal_SettleModal__WEBPACK_IMPORTED_MODULE_24__["default"], {
                 ref: "settlement_modal",
                 modalId: "settlement_modal",
                 asset: this.state.settleAsset,
@@ -14889,7 +14913,7 @@ var AccountPortfolioList = function (_React$Component) {
                 this._renderBalances(this.props.balanceList, this.props.optionalAssets, this.props.visible),
                 this._renderSendModal(),
                 this._renderSettleModal(),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Dashboard_SimpleDepositWithdraw__WEBPACK_IMPORTED_MODULE_25__["default"], _extends({
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Dashboard_SimpleDepositWithdraw__WEBPACK_IMPORTED_MODULE_26__["default"], _extends({
                     ref: "withdraw_modal",
                     action: "withdraw",
                     fiatModal: this.state.fiatModal,
@@ -14901,20 +14925,20 @@ var AccountPortfolioList = function (_React$Component) {
                 }, currentWithdrawAsset, {
                     isDown: this.props.gatewayDown.get("OPEN")
                 })),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal_WithdrawModalNew__WEBPACK_IMPORTED_MODULE_27__["default"], {
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal_WithdrawModalNew__WEBPACK_IMPORTED_MODULE_28__["default"], {
                     ref: "withdraw_modal_new",
                     modalId: "withdraw_modal_new",
                     backedCoins: this.props.backedCoins,
                     initialSymbol: this.state.withdrawAsset
                 }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal_DepositModal__WEBPACK_IMPORTED_MODULE_24__["default"], {
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Modal_DepositModal__WEBPACK_IMPORTED_MODULE_25__["default"], {
                     ref: "deposit_modal_new",
                     modalId: "deposit_modal_new",
                     asset: this.state.depositAsset,
                     account: this.props.account.get("name"),
                     backedCoins: this.props.backedCoins
                 }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Dashboard_SimpleDepositBlocktradesBridge__WEBPACK_IMPORTED_MODULE_26__["default"], {
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Dashboard_SimpleDepositBlocktradesBridge__WEBPACK_IMPORTED_MODULE_27__["default"], {
                     ref: "bridge_modal",
                     action: "deposit",
                     account: this.props.account.get("name"),
@@ -14932,18 +14956,18 @@ var AccountPortfolioList = function (_React$Component) {
     return AccountPortfolioList;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-AccountPortfolioList = Object(alt_react__WEBPACK_IMPORTED_MODULE_14__["connect"])(AccountPortfolioList, {
+AccountPortfolioList = Object(alt_react__WEBPACK_IMPORTED_MODULE_15__["connect"])(AccountPortfolioList, {
     listenTo: function listenTo() {
-        return [stores_SettingsStore__WEBPACK_IMPORTED_MODULE_15__["default"], stores_GatewayStore__WEBPACK_IMPORTED_MODULE_16__["default"], stores_MarketsStore__WEBPACK_IMPORTED_MODULE_17__["default"]];
+        return [stores_SettingsStore__WEBPACK_IMPORTED_MODULE_16__["default"], stores_GatewayStore__WEBPACK_IMPORTED_MODULE_17__["default"], stores_MarketsStore__WEBPACK_IMPORTED_MODULE_18__["default"]];
     },
     getProps: function getProps() {
         return {
-            settings: stores_SettingsStore__WEBPACK_IMPORTED_MODULE_15__["default"].getState().settings,
-            viewSettings: stores_SettingsStore__WEBPACK_IMPORTED_MODULE_15__["default"].getState().viewSettings,
-            backedCoins: stores_GatewayStore__WEBPACK_IMPORTED_MODULE_16__["default"].getState().backedCoins,
-            bridgeCoins: stores_GatewayStore__WEBPACK_IMPORTED_MODULE_16__["default"].getState().bridgeCoins,
-            gatewayDown: stores_GatewayStore__WEBPACK_IMPORTED_MODULE_16__["default"].getState().down,
-            allMarketStats: stores_MarketsStore__WEBPACK_IMPORTED_MODULE_17__["default"].getState().allMarketStats
+            settings: stores_SettingsStore__WEBPACK_IMPORTED_MODULE_16__["default"].getState().settings,
+            viewSettings: stores_SettingsStore__WEBPACK_IMPORTED_MODULE_16__["default"].getState().viewSettings,
+            backedCoins: stores_GatewayStore__WEBPACK_IMPORTED_MODULE_17__["default"].getState().backedCoins,
+            bridgeCoins: stores_GatewayStore__WEBPACK_IMPORTED_MODULE_17__["default"].getState().bridgeCoins,
+            gatewayDown: stores_GatewayStore__WEBPACK_IMPORTED_MODULE_17__["default"].getState().down,
+            allMarketStats: stores_MarketsStore__WEBPACK_IMPORTED_MODULE_18__["default"].getState().allMarketStats
         };
     }
 });
