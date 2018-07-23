@@ -1192,7 +1192,7 @@ var MyMarkets = function (_React$Component2) {
                                     active: activeMarketTab === index
                                 })
                             },
-                            base
+                            base.replace("RUDEX.", "")
                         );
                     }),
                     myMarketTab && hasOthers ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(
