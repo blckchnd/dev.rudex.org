@@ -933,9 +933,9 @@
             "min_amount": "Minimum amount: %(minAmount)s %(symbol)s",
             "min_amount_error": "Please enter number >= minimum",
             "openledger_notice1":
-            "Please see the official stance of OpenLedger on usage of their gateways:",
+                "Please see the official stance of OpenLedger on usage of their gateways:",
             "openledger_notice1_informed":
-            "I have read and am informed about OpenLedgers position.",
+                "I have read and am informed about OpenLedgers position.",
             "support_block": "For support, please contact RuDEX at:",
             "under_construction": "Under Construction",
             "partners": {
@@ -2019,6 +2019,7 @@
         "totals": "Asset Totals",
         "unclaimed": "Unclaimed balances belonging to these keys",
         "unclaimed_vesting": "Unclaimed (vesting)",
+        "allow_proxy": "Your vote has power, please support the blckchnd proxy",
         "understand_1":
             "I understand that no one can recover my password if I lose or forget it",
         "understand_2": "I have written down or otherwise stored my password",
