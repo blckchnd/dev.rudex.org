@@ -2981,52 +2981,56 @@
     }
   },
   "listing": {
-    "here": "HERE",
-    "submit_request": "Submit request",
-    "add_coin": "Add coin",
-    "donate_progress": "Donate progress",
-    "get_donate_tokens": "GET TOKENs",
-    "loading": "Loading...",
-    "notice_informed": "By submitting a request I confirm that I have read the terms and conditions and I agree with them",
+    "here": "ТУТ",
+    "submit_request": "Подать заявку",
+    "add_coin": "Добавить монету",
+    "donate_progress": "Прогресс краудфандинга",
+    "get_donate_tokens": "Получить ",
+    "token": " токен",
+    "loading": "Подождите, идёт загрузка",
+    "notice_informed": "Подавая заявку я подтверждаю что мной прочитаны правила и условия и я с ними согласен",
     "modal": {
-      "header": "Participate in crowdfunding"
+      "header": "Участвовать в крудфандинге",
+      "header2": "Поддержать листинг "
     },
     "table": {
-      "rank": "Rank",
-      "asset_name": "Asset name (ticker)",
-      "goal": "Goal",
-      "donates": "Donates",
-      "status": "Status",
-      "progress": "Progress",
-      "coming_soon": "Coming soon",
-      "collecting": "Collecting",
-      "done": "Done"
+      "rank": "№",
+      "asset_name": "Название монеты (тикер)",
+      "goal": "Цель",
+      "donates": "Получено",
+      "status": "Статус",
+      "progress": "Прогресс",
+      "coming_soon": "Скоро",
+      "collecting": "Cбор",
+      "done": "Собрано"
     },
     "texts": {
-      "header": "Token listing on RuDEX is open for everyone!",
-      "text1": "From now on any project that would like to start trading their token on RuDEX can easily do that using our new listing service. Every RuDEX user can nominate a token of any project for listing, or support the project that is in the pending list with their donation.",
-      "text2": "To nominate a token for listing you need to fill out a simple form, that can be found in the listing candidates section. After in depth review by our team that can take us up to one week, if your nominated project fulfills our internal criteria the token is added to the pending list, and is added to the public crowdfunding in the listing section of the exchange. Main goal of these donations is to for launch and technical support of the token gateway, as well as measuring potential interest in particular token.",
+      "header": "Разместите свой актив на RuDEX",
+      "text1": "Хотите разместить свой актив на RuDEX, и интегрироваться в децентрализованную торговую платформу Bitshares? Воспользуйтесь нашим сервисом листинга путем публичного краудфандинга. Процедура листинга очень проста и описана ниже.",
+      "text2": "Чтобы подать заявку на размещение актива на платформе RuDEX достаточно заполнить простую форму (кнопка Подать заявку). Наша команда рассмотрит вашу заявку в соответствии с предоставленной информацией в течение 7 рабочих дней, и в случае если проект удовлетворяет нашим критериям, он будет включен в список проектов для листинга путем публичного краудфандинга. Основная цель публичного добровольного краудфандинга - сбор средств на запуск и техническую поддержку шлюза, а также оценка потенциальной востребованности конкретного актива.",
       "text3": {
-        "t1": "The voting happens with a special token ",
-        "t2": "that you can acquire here "
+        "t1": "Поддержать листинг интересующего проекта путем краудфандинга может любой пользователь RuDEX. ",
+        "t2": "Для этого необходимо предварительно ",
+        "get": "приобрести "
       },
       "text4": {
-        "t1": "Once you’ve got tokens ",
-        "t2": "you can support any project on the pending list by sending the tokens to its special account by using the special dialog, or directly sending them to that account."
+        "t1": "специальные токены",
+        "t2": "Краудфандинг осуществляется путем отправки токена",
+        "t3": "на вкладке \"Прогресс краудфандинга\" (кнопка Donate напротив наименования актива)."
       },
       "text5": {
-        "t1": "Once the projects’ token successfully passes the goal amount all of the tokens ",
-        "t2": "sent to that account are burned, and our team starts to develop the gateway for that token.",
-        "t3": "Please note that we will account for other criteria, such as the token trading volume, and that we retain the right to delist the token due to our considerations, such as that the trading volume drops to critically low amounts and stays there, or if any red flag events occur to the project in question."
+        "t1": "После того как проект достиг установленного порога краудфандинга все собранные токены",
+        "t2": "сжигаются, а  наша команда приступает непосредственно к процедуре листинга, включающей запуск шлюза и настройку торговых пар для данного токена.",
+        "t3": "Обратите внимание что команда RuDEX оставляет за собой право делистинга токенов с целью защиты собственных интересов и интересов пользователей."
       },
       "rules": {
-        "header": "Description:",
-        "rule_1": "Please read the rules and fill out the listing form according to them.",
-        "rule_2": "Wait for the review results, if everything is okay, than the token will appear in the candidate tokens listing section within a week.",
-        "rule_3": "Start promoting your token listing via social networks to attract your community to participate in the voting, and use DONATE tokens (you need a RuDEX account for this).",
-        "rule_4": "The listing activities start once the listing goal is reached, and the gateway launch preparation starts. Get your technical & marketing teams or any other official person to get in touch with us."
+        "header": "Порядок размещения актива на RuDEX:",
+        "rule_1": "Изучите правила и подайте заявку на листинг",
+        "rule_2": "Дождитесь результатов ревью вашего проекта: если всё в порядке, то он будет включен в список проектов на листинг в течение 7 рабочих дней",
+        "rule_3": "Не сидите сложа руки, продвигайте листинг своего проекта путем публичного краудфандинга через соцсети, привлекайте других пользователей. Используйте токены DONATE для достижения порога краудфандинга (необходимо иметь аккаунт на RuDEX)",
+        "rule_4": "Процедура листинга актива стартует сразу после преодоления порога краудфандинга и начинается с подготовки к запуску шлюза. Обеспечьте возможность связи со своей технической/маркетинговой командой или другим ответственным лицом"
       },
-      "end": "Good luck to your projects, and welcome to "
+      "end": "Удачи вашим проектам и добро пожаловать на "
     }
   }
 }
