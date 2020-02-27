@@ -2981,7 +2981,6 @@
     }
   },
   "listing": {
-    "here": "HERE",
     "submit_request": "Submit request",
     "add_coin": "Add Coin",
     "donate_progress": "Crowdfunding progress",
@@ -3000,7 +2999,7 @@
       "donates": "Received",
       "status": "Status",
       "progress": "Progress",
-      "coming_soon": "Soon",
+      "coming_soon": "Coming soon",
       "collecting": "Collecting",
       "done": "Collected"
     },
