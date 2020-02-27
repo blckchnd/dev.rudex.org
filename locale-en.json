@@ -3015,7 +3015,8 @@
       "text4": {
         "t1": "special tokens",
         "t2": "Crowdfunding consists of sending tokens",
-        "t3": "via special \"Crowdfunding progress\" form (Donate button next to the asset name)."
+        "t3": "via special \"Crowdfunding progress\" form ( ",
+        "t4": " button next to the asset name)."
       },
       "text5": {
         "t1": "After the project reaches the set crowdfunding threshold all collected tokens are burned",
