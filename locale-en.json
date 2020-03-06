@@ -1116,6 +1116,9 @@
     "title": "Fee Schedule"
   },
   "footer": {
+    "listing": "Token Listing",
+    "audit": "Audit",
+    "support": "Support",
     "advanced_settings": "Advanced settings",
     "backup": "A Backup is Required",
     "block": "Block",
