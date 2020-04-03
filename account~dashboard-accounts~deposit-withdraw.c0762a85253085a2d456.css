@@ -1,0 +1,12 @@
+.paginated-list .ant-table-body {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.paginated-list .ant-table td {
+  white-space: nowrap;
+}
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYWNjb3VudH5kYXNoYm9hcmQtYWNjb3VudHN+ZGVwb3NpdC13aXRoZHJhdy5jMDc2MmE4NTI1MzA4NWEyZDQ1Ni5jc3MiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9hcHAvY29tcG9uZW50cy9VdGlsaXR5L3BhZ2luYXRlZC1saXN0LnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLnBhZ2luYXRlZC1saXN0IC5hbnQtdGFibGUtYm9keSB7XG4gIG92ZXJmbG93OiBhdXRvO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xufVxuXG4ucGFnaW5hdGVkLWxpc3QgLmFudC10YWJsZSB0ZCB7XG4gIHdoaXRlLXNwYWNlOiBub3dyYXA7XG59XG4iXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7Iiwic291cmNlUm9vdCI6IiJ9*/
