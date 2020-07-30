@@ -1268,10 +1268,12 @@
             "rudex_notice_third_party": "Please see Terms of third party service",
             "rudex_notice1_informed_third_party_service": "I have read and agree with third party service terms",
             "buy_crypto":{
-                "title":"Buy cryptocurrency",
-                "title2":"На RuDEX вы можете выгодно приобрести криптовалюту (BTC, ETH, USDT) используя дебетовую или кредитную карту (Visa/MasterCard)* или банковский перевод (SEPA)",
+                "title":"Buy Crypto",
+                "title2":"You can purchase crypto (BTC, ETH, USDT) to your RuDEX account using debit or credit card (Visa/MasterCard)* or bank wire (SEPA)",
                 "partner":"*service provided by our partner Raido Finance",
                 "buy":"Buy",
+                "min_amount":"Minimum amount: ",
+                "max_amount":"Maximum amount: ",
                 "approximate_amount":"* * This is approximate amount. The exact amount will be calculated at the time of completion of the transaction.",
                 "final_text":"The purchased cryptocurrency will be transferred to the account "
             }
