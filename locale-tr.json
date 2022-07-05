@@ -804,6 +804,7 @@
         "vol_short": "Hacim",
         "volume": "Hacim",
         "volume_24": "24 Saat",
+        "volume_24_usdt": "Saat 24h",
         "worth_less_settlement_warning": "Warning! You can get a better price by selling to {market_link}.",
         "your_price": "Sizin Çağrı Fiyatınız",
         "zoom": "Yakınlaştır",
@@ -1239,7 +1240,7 @@
         "recent_withdraw": "Son işlemler",
         "rudex": {
             "coming_soon": "Coming soon",
-            "min_amount": "Minimum amount: %(minAmount)s %(symbol)s",
+            "min_amount": "Minimum amount: %(minamount)s %(symbol)s",
             "min_amount_error": "Please enter number >= minimum",
             "support_block": "For support, please contact RuDEX at:",
             "under_construction": "Under Construction"

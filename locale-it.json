@@ -804,6 +804,7 @@
         "vol_short": "Vol",
         "volume": "Volume",
         "volume_24": "Volume 24h",
+        "volume_24_usdt": "Volume USDT",
         "worth_less_settlement_warning": "Warning! You can get a better price by selling to {market_link}.",
         "your_price": "Il tuo Call Price",
         "zoom": "Zoom",
@@ -1239,7 +1240,7 @@
         "recent_withdraw": "Prelievi recenti",
         "rudex": {
             "coming_soon": "Prossimamente",
-            "min_amount": "Quantità minima: %(minAmount)s %(symbol)s",
+            "min_amount": "Quantità minima: %(minamount)s %(symbol)s",
             "min_amount_error": "Per favore inserisci un numero >= minimo",
             "support_block": "Per supporto, contatta RuDEX a:",
             "under_construction": "Under Construction"
